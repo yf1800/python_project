@@ -1,1 +1,1 @@
-# python_project
+# learn python language
