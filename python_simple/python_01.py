@@ -44,11 +44,20 @@ if True:
     print ("Answer")
     print ("True")
 else:
-    print ("Answer")
+        print ("Answer")
     # 没有严格缩进，在执行时会报错
     print ("False")
 """
 #报错信息为：IndentationError: unindent does not match any outer indentation level 
 #原因 ：使用的缩进方式不一致，有的是 tab 键缩进，有的是空格缩进，改为一致即可
-File "python_01.py", line 49
-print ("False")
+
+#错误的缩进二
+"""
+  print("to hello")  #两个空格的空位
+    print ("False")  #一个制表符的空位
+"""
+#报错信息为：IndentationError: unexpected indent 
+#原因 ：tab和空格没对齐的问题
+#Python 的代码块中必须使用相同数目的行首缩进空格数。建议每个缩进层次使用 单个制表符 或 两个空格 或 四个空格 , 切记不能混用
+
+print("to hello")
